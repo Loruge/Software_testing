@@ -1,16 +1,14 @@
 class New_hw():
     def return_name(self, name):
-        self.name = name
+        return name
 
-    def numbers(self):
-        number = []
-        user_input = input('Enter numbers\n')
-        user_input.split(',')
-        new_i = int(user_input)
-        result = sum(number)/len(number)
-        return result
+    def average(self, *args):
+        my_list = []
+        result = sum(args)/len(args)
+        my_list.append(result)
+        return my_list
 
 
 test = New_hw()
 test.return_name(name='Ruslan')
-test.numbers()
+print(test.average(5, 7, 8, 9, 4))
